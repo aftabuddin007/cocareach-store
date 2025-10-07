@@ -4,6 +4,7 @@ import Home from "../Pages/Home/Home";
 import Root from "../Layouts/Root";
 import ErrorPage from "../Pages/Error/ErrorPage";
 import WishList from "../Pages/WishList/WishList";
+import ProductDetails from "../Pages/ProductDetails/ProductDetails";
  const router = createBrowserRouter([
   {
   path:'/',
@@ -12,10 +13,15 @@ import WishList from "../Pages/WishList/WishList";
   hydrateFallbackElement:<p>loading...</p>,
   children:[
      {
-  path:'/home',
+  index:true,
   element:<Home></Home>,
   loader:() =>   fetch('./data.json'),
   
+},
+
+ {
+  path:'/home',
+  element:<Home></Home>
 },
  {
   path:'/products',
@@ -24,6 +30,10 @@ import WishList from "../Pages/WishList/WishList";
  {
   path:'/wishList',
   element:<WishList></WishList>
+},
+ {
+  path:'/product/:id',
+  element:<ProductDetails></ProductDetails>
 }
   ]
   },
