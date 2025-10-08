@@ -10,9 +10,19 @@ const ProductDetails = () => {
     const{name,image,price,category,description,stock}=product || {}
     
     const handleAddToWish = ()=>{
-        const existingList = localStorage.getItem('wishlist')
-        console.log(JSON.parse(existingList))
-        // localStorage.setItem('wishlist',JSON.stringify(product))
+        const existingList = JSON.parse(localStorage.getItem('wishlist'))
+        
+      let updatedList = []
+        if(existingList){
+          const isDuplicated = existingList.some(p=>p.id === product.id)
+          if(isDuplicated)
+            return alert ("soorryy vvaaaiii")
+          
+           updatedList = [...existingList,product]
+        }else{
+          updatedList.push(product)
+        }
+        localStorage.setItem('wishlist',JSON.stringify(updatedList))
     }
 
 
