@@ -11,6 +11,7 @@ const WishList = () => {
 
 
     },[])
+    if(!wishlist.length) return <p>not data available</p>
 
     const sortedItem = (()=>{
         if(sortOrder === 'price-asc'){
