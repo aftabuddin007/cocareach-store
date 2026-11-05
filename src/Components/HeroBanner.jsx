@@ -3,10 +3,10 @@ import { ShoppingBag, ArrowRight, ShieldCheck, Box, Recycle, Sparkles, Truck } f
 
 export default function HeroBanner() {
   return (
-    <div className="relative overflow-hidden bg-slate-900 text-white min-h-[600px] flex flex-col justify-center">
+    <div className="relative overflow-hidden bg-white- text-white min-h-[600px] flex flex-col justify-center">
       {/* Background Subtle Patterns & Glows */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-white rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-white rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 relative z-10 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -15,7 +15,7 @@ export default function HeroBanner() {
           <div className="lg:col-span-7 space-y-8">
             
             {/* Promo Badge */}
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-cyan-950/80 border border-cyan-500/30 text-cyan-400 text-xs sm:text-sm font-medium backdrop-blur-md">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-cyan-500/30 text-cyan-400 text-xs sm:text-sm font-medium backdrop-blur-md">
               <Sparkles className="w-4 h-4" />
               <span>Heavy-Duty & Food-Grade Storage Solutions</span>
             </div>
