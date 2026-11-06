@@ -3,7 +3,7 @@ import { ShoppingBag, ArrowRight, ShieldCheck, Box, Recycle, Sparkles, Truck } f
 
 export default function HeroBanner() {
   return (
-    <div className="relative overflow-hidden bg-white- text-white min-h-[600px] flex flex-col justify-center">
+    <div className="relative overflow-hidden bg-white- text-white min-h-[600px] flex flex-col justify-center mt-10">
       {/* Background Subtle Patterns & Glows */}
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-white rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-white rounded-full blur-3xl pointer-events-none" />
