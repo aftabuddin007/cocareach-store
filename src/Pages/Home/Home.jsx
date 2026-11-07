@@ -3,6 +3,7 @@ import { Link,  } from 'react-router';
 import ProductCard from '../../Components/Product/ProductCard';
 import useProducts from '../../Hooks/useProducts';
 import HeroBanner from '../../Components/HeroBanner';
+import Reviews from '../../Components/Review';
 
 const Home = () => {
     // const products = useLoaderData()
@@ -23,6 +24,7 @@ const Home = () => {
                 featuredProduct.map(pro=>(<ProductCard key={pro.id} pro={pro}></ProductCard>))
             }
            </div>
+           <Reviews></Reviews>
         </div>
     );
 };
